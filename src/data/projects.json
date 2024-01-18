@@ -1,0 +1,29 @@
+[
+    {
+      "title": "Rick and Morty Wiki",
+      "imageSrc": "projects/rickandmorty.png",
+      "description": "Here in the Rick & Morty Character Wiki, you can navigate to explore...",
+      "description2": "Here in the Rick & Morty Character Wiki, you can navigate to explore different characters, locations, and episodes. You can also check if a character is alive or dead. Also, search for specific characters. This project was built with React.js version 18.2.0, implementing a Data Fetching by async function, converting data into JSON format by destructuring components and extracting properties.The function retrieves data from the Rick and Morty API, utilizing state hooks such as useEffect and useState. The styling is accomplished with Bootstrap 5.3.2. The project is organized into components such as Cards, Filters, Search, and Pagination. Each component is implemented with a layout in Bootstrap's grid structure, featuring additional elements like accordions, badges, and buttons. On the other hand, the react-paginate package version 7.1.5 was implemented, providing flexibility to seamlessly integrate into the project.",
+      "skills": ["ReactJS", "JSON", "Bootstrap"],
+      "demo": "https://rickandmorty-psi-flame.vercel.app/",
+      "source": "https://github.com/Sanrivalin/rickandmorty"
+    },
+    {
+      "title": "Netflix Clone",
+      "imageSrc": "projects/netflix.png",
+      "description": "In this Netflix clone, you can seamlessly sign up and log in. Once...",
+      "description2": "In this Netflix clone, you can seamlessly sign up and log in. Once logged in, you have the ability to add your favorite movies or remove them at your convenience. Witness the latest movies showcased in an organized component row, beautifully presented with a slider effect. This application was crafted using ReactJS version 18.2.0 and Tailwind CSS version 8.5.5. To interact with themoviedb.org API, Axios library version 1.5.1 was employed, making dynamic API calls to fetch movie data. On the backend, data is stored in Firebase version 10.4.0, utilizing the NoSQL cloud database Firestore. Specifically, liked movies are stored using functions such as onSnapshot. For user registration and sign-in, an Authentication package service was implemented. This service handles the user context using the createContext function and the useContext hook. This creates a seamless and secure user experience, ensuring the privacy and preferences of each user are respected.",
+      "skills": ["ReactJS", "Firebase", "Tailwind CSS"],
+      "demo": "https://netflix-rose-nine.vercel.app/",
+      "source": "https://github.com/Sanrivalin/netflix"
+    },
+    {
+      "title": "Twitter Clone",
+      "imageSrc": "projects/twitter.png",
+      "description": "Here in the Twitter clone application,  you can freely share and comment...",
+      "description2": "Here in the Twitter clone application,  you can freely share and comment on ideas. To contribute, registration is required, followed by a login. Once logged in, you can effortlessly post your own ideas, comment on others, or simply express your appreciation by liking them. This web application was meticulously developed using the Laravel Framework version 10.35.0, adhering to the model-view-controller (MVC) architectural pattern. The MVC structure provides a well-organized and elegant approach to building applications. Data is stored in a web SQL server compatible with MySQL, ensuring efficient and secure data management.The application's routing system was enhanced through the use of the group method, facilitating the organization and configuration of routes. Furthermore, the deployment of this application was executed seamlessly on Vercel, ensuring accessibility and optimal performance for users.",
+      "skills": ["Laravel", "MySQL", "CSS"],
+      "demo": "https://idea-ochre.vercel.app/",
+      "source": "https://github.com/Sanrivalin/ideas"
+    }
+  ]
