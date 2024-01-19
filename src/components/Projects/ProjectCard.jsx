@@ -12,11 +12,15 @@ export const ProjectCard = ({
   const [modalShow, setModalShow] = useState(false);
   return (
     <div className={styles.container}>
+      <div className={styles.imageContainer}>
       <img
         src={getImageUrl(imageSrc)}
         alt={`Image of ${title}`}
         className={styles.image}
       />
+
+      </div>
+      
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}<Button variant="link" className="text-dark link-offset-2 link-offset-3-hover " size="sm" onClick={() => setModalShow(true)}>
         More

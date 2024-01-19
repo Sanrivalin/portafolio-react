@@ -1,34 +1,34 @@
 [
     {
       "title": "HTML",
-      "imageSrc": "skills/html.png"
+      "imageSrc": "skills/htmlBlack.png"
     },
     {
       "title": "CSS",
-      "imageSrc": "skills/css.png"
+      "imageSrc": "skills/cssBlack.png"
     },
     {
       "title": "ReactJS",
-      "imageSrc": "skills/react.png"
+      "imageSrc": "skills/reactBlack.png"
     },
     {
       "title": "MySQL",
-      "imageSrc": "skills/mysql.png"
+      "imageSrc": "skills/mysqlBlack.png"
     },
     {
       "title": "Laravel",
-      "imageSrc": "skills/laravel.png"
+      "imageSrc": "skills/laravelBlack.png"
     },
     {
       "title": "PHP",
-      "imageSrc": "skills/php.png"
+      "imageSrc": "skills/phpBlack.png"
     },
     {
       "title": "Figma",
-      "imageSrc": "skills/figma.png"
+      "imageSrc": "skills/figmaBlack.png"
     },
     {
       "title": "Javascript",
-      "imageSrc": "skills/javascript.png"
+      "imageSrc": "skills/javascriptBlack.png"
     }
   ]
