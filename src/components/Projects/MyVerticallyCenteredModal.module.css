@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .content, .header, .footer {
-    background: linear-gradient(294deg, var(--color-secondary) 0%, var(--color-bg) 100%);
+    background: linear-gradient(0deg, var(--color-secondary) 0%, var(--color-bg) 100%);
     box-shadow: 0 5px 20px 0 #130A0C;
 }
 

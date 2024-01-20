@@ -3,7 +3,7 @@ import styles from "./ProjectsCard.module.css";
 import { getImageUrl } from "../../utils";
 import MyVerticallyCenteredModal from "./MyVerticallyCenteredModal";
 import Button from 'react-bootstrap/Button';
-import projects from "../../data/projects.json";
+
 
 
 export const ProjectCard = ({
