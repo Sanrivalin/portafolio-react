@@ -90,8 +90,9 @@
   left: -10vw;
   border-radius: 764px;
   background: rgba(145, 141, 97, 0.7);
-  filter: blur(100px);
+  filter: blur(209px);
   z-index: 0;
+  -webkit-filter: blur(209px);
 }
 
 .bottomBlur {
