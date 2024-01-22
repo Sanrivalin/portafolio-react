@@ -39,7 +39,7 @@ export const Navbar = () => {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="./assets/file/CVSantiagoRivasMolinaJan19_2024.pdf" download="CV_SantiagoRivasMolina.pdf">CV</a>
+            <a href="./assets/CVSantiagoRivasMolinaJan19_2024.pdf" download="CV_SantiagoRivasMolina.pdf">CV</a>
           </li>                   
         </ul>        
       </div>
