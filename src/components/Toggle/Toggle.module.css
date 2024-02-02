@@ -1,0 +1,70 @@
+@import "../../vars.css";
+
+.container {
+    position: absolute;
+    top:2em;
+    right: 2.2em;   
+    padding-top: 32px;
+    margin: 0 8%;
+}
+
+.toggle {
+    visibility: hidden;
+}
+
+.toggle + label {
+    display: flex;
+    align-items: center;
+    font-size:19px;
+    cursor: pointer;
+    color:var(--color-brown);
+    font-weight: 580;
+    text-decoration: none;
+    
+}
+
+.toggle + label::before{
+    content:"";
+    height:1em;
+    width: 2em;
+    border-radius:1em;
+    background-color: var(--toggle-fg);
+    margin-right: 0.9em;
+    transition: background-color 250ms ease-in-out;;
+}
+
+.toggle + label::after{
+    content:"";
+    height:0.8em;
+    width: 0.7em;
+    border-radius:1em;
+    background-color: var(--toggle-bg);
+    position: absolute;
+    left: 0.2em;
+    transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.toggle:checked + label::after{
+    transform: translateX(98%);
+    -webkit-transform: translateX(134%);
+    -moz-transform: translateX(98%);
+    -ms-transform: translateX(98%);
+    -o-transform: translateX(98%);
+}
+
+@media screen and  (max-width: 830px){
+    .container {        
+        right: 3.6em; 
+        margin: 20px 9%;          
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {        
+        right: 2.6em; 
+        margin: 20px 9%;          
+    }
+    .toggle + label {
+        font-size:16px;
+    }
+}

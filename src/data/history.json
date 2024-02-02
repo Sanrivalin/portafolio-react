@@ -1,0 +1,21 @@
+[
+    {
+      "role": "IT Request Management Analyst",
+      "organisation": "Teleperformance",
+      "startDate": "Apr, 2021",
+      "endDate": "Jan, 2023",
+      "experiences": ["Delivered 1 level service in 5 LatAm countries, while handling 9 users per day", "Analyzed user requirements, and supported agile development"],
+      "imageSrc": "history/teleperformanceRedimensianada.png"
+    },
+    {
+      "role": "Technical Support Agent",
+      "organisation": "Aeronautica Civil - Comware",
+      "startDate": "Aug, 2018",
+      "endDate": "Apr, 2021",
+      "experiences": ["Managed IT infrastructure at the Aeronautica Civil, including hardware and software", "Provided comprehensive support for apps like Aranda, SIIF, JDE Oracle, Kactus, active directory, remote worker support."],
+      "imageSrc": "history/AerocivilLogoTrans (3).png"
+    }
+   
+  ]
+
+  

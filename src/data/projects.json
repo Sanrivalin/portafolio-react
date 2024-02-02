@@ -1,0 +1,29 @@
+[
+    {
+      "title": "Rick and Morty Wiki",
+      "imageSrc": "projects/rickandmorty3.png",
+      "description": "Here in the Rick & Morty Character Wiki, you can navigate to explore...",
+      "description2": "This is Rick & Morty Character Wiki where users can navigate to investigate different characters, locations and episodes, also check if a character is alive or dead.  It was done with Reactjs 18.2.0, retrieving data from a Rick and Morty API. Styled with bootstrap 5.3.2.",
+      "skills": ["ReactJS", "JSON", "Bootstrap"],
+      "demo": "https://rickandmorty-psi-flame.vercel.app/",
+      "source": "https://github.com/Sanrivalin/rickandmorty"
+    },
+    {
+      "title": "Netflix Clone",
+      "imageSrc": "projects/netflix3.png",
+      "description": "In this Netflix clone, you can seamlessly sign up and log in. Once...",
+      "description2": "Netflix clone where users can sign in up and log in, they can add favorite movies or delete them. Also, they can see the latest movie organized. This app was made using ReactJS 18.2.0 version, and Tailwind CSS 8.5.5, the data is stored in Firebase 10.4.0 version using NoSQL cloud database Firestore for backend, also was applied Authentication package service.",
+      "skills": ["ReactJS", "Firebase", "Tailwind CSS"],
+      "demo": "https://netflix-rose-nine.vercel.app/",
+      "source": "https://github.com/Sanrivalin/netflix"
+    },
+    {
+      "title": "Twitter Clone",
+      "imageSrc": "projects/twitter2.png",
+      "description": "Here in the Twitter clone application,  you can freely share and comment...",
+      "description2": "Twitter clone where users can share ideas, and comment ideas, if users want to share an idea they have to be registered and further to log in, they can post own ideas, comment ideas or just give a liked.  To build this web application was implemented, Laravel Framework 10.35.0. This application store data in a web SQL server. The application was deployed at Vercel CLI.",
+      "skills": ["Laravel", "MySQL", "CSS"],
+      "demo": "https://idea-ochre.vercel.app/",
+      "source": "https://github.com/Sanrivalin/ideas"
+    }
+  ]

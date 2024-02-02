@@ -1,0 +1,116 @@
+import i18n from 'i18next'
+import  LanguageDetector from 'i18next-browser-languagedetector'
+import { initReactI18next } from 'react-i18next'
+
+
+i18n.use(LanguageDetector).use(initReactI18next).init({
+    debug: true,
+    fallbackLng: "en",
+    interpolation: {
+        escapeValue: false,
+      },
+    resources : {
+        en : {
+            translation : {
+                navOption1 : "About",
+                navOption2 : "Experience",
+                navOption3 : "Projects",
+                navOption4 : "Contact",
+                navTitulo : "Portfolio",
+                navToggle : 'Dark Mode',
+                heroGreeting : "Hi, I'm Santiago",
+                heroParagraph: "I'm a full-stack developer with 2 years of experience using React JS and Laravel. Reach out if you'd like to learn more!",
+                heroContact : "Contact Me",
+                aboutTitle : "About",
+                aboutSubTitle1 : "Frontend Developer",
+                aboutSubTitle2 : "Backend Developer",
+                aboutSubTitle3 : "UI Designer",
+                aboutSubContent1: "I'm a frontend developer with experience in building responsive and optimized sites",
+                aboutSubContent2: "I have experience developing fast and optimised back-end systems and APIs",
+                aboutSubContent3: "I have designed multiple landing pages and have created design systems as well",
+                experienceTitle: "Experience",
+                experienceSubTitleTP: "IT Request Management Analyst, Teleperformance",
+                experienceDateTP: "Apr, 2021 - Jan, 2023",
+                experienceSubContent1TP: "Delivered 1 level service in 5 LatAm countries, while handling 9 users per day",
+                experienceSubContent2TP: "Analyze user requirements, and supported agile development",
+                experienceSubTitleAero : "Technical Support Agent, Aeronautica Civil - Comware",
+                experienceDateAero : "Aug, 2018 - Apr, 2021",
+                experienceSubContent1Aero : "Managed IT infrastructure at the Aeronautica Civil, including hardware and software",
+                experienceSubContent2Aero : "Provided comprehensive support for apps like Aranda, SIIF, JDE Oracle, Kactus, active directory, remote worker support.",
+                projectsTitle : "Projects",
+                projectsImage1: "Imagen ",
+                projectsImage1Alt: "Image with Rick And Morty page",
+                projectsTitle1: "Rick and Morty Wiki",
+                projectsTitle2: "Netflix Clone",
+                projectsTitle3: "Twitter Clone",
+                projectDescriptionA: "Here in the Rick & Morty Character Wiki, you can navigate to explore...",
+                projectDescriptionB: "In this Netflix clone, you can seamlessly sign up and log in. Once..",
+                projectDescriptionC : "Here in the Twitter clone application,  you can freely...",
+                projectTotalDescA: "This is Rick & Morty Character Wiki where users can navigate to investigate different characters, locations and episodes, also check if a character is alive or dead.  It was done with Reactjs 18.2.0, retrieving data from a Rick and Morty API. Styled with bootstrap 5.3.2",
+                projectTotalDescB: "Netflix clone where users can sign in up and log in, they can add favorite movies or delete them. Also, they can see the latest movie organized. This app was made using ReactJS 18.2.0 version, and Tailwind CSS 8.5.5, the data is stored in Firebase 10.4.0 version using NoSQL cloud database Firestore for backend, also was applied Authentication package service.",
+                projectTotalDescC: "Twitter clone where users can share ideas, and comment ideas, if users want to share an idea they have to be registered and further to log in, they can post own ideas, comment ideas or just give a liked.  To build this web application was implemented, Laravel Framework 10.35.0. This application store data in a web SQL server. The application was deployed at Vercel CLI.",
+                more: "more.",
+                demo : "Demo",
+                source : "Source",
+                close : "Close",
+                contactTitle : 'Contact',
+                contactP : 'Feel free to reach out!',
+
+                
+            },
+                    
+        },
+        es : {
+            translation : {
+                navOption1 : "Sobre Mi",
+                navOption2 : "Experiencia",
+                navOption3 : "Proyectos",
+                navOption4 : "Contacto",
+                navTitulo : "Portafolio",
+                navToggle : 'Modo Oscuro',
+                heroGreeting : "Hola, soy Santiago",
+                heroParagraph: "Soy un desarrollador frontend con experiencia en la creación de sitios responsivos y optimizados.",
+                heroContact : "Contáctame",
+                aboutTitle : "Sobre Mí",
+                aboutSubTitle1 : "Desarrolador Frontend",
+                aboutSubTitle2 : "Desarrolador Backend",
+                aboutSubTitle3 : "Diseñador UI",
+                aboutSubContent1: "Soy un desarrollador frontend con experiencia en la creación de sitios responsivos y optimizados.",
+                aboutSubContent2: "Tengo experiencia desarrollando APIs y sistemas back-end rápidos y optimizados.",
+                aboutSubContent3: "He diseñado múltiples landing pages y también he creado sistemas de diseño.",
+                experienceTitle: "Experiencia",
+                experienceSubTitleTP: "Analista de gestión de requerimeintos de TI, Teleperformance",
+                experienceDateTP: "Abr, 2021 - Ene, 2023",
+                experienceSubContent1TP: "Entregué servicio de 1er nivel en 5 países de Latinoamérica, mientras atendía 9 usuarios por día",
+                experienceSubContent2TP: "Analicé los requisitos de los usuarios y respaldé el desarrollo ágil",
+                experienceSubTitleAero : "Agente de soporte técnico, Aeronautica Civil - Comware",
+                experienceDateAero : "Ago, 2018 - Abr, 2021",
+                experienceSubContent1Aero : "Administre la infraestructura de TI en la Aeronáutica Civil, incluyendo hardware y software",
+                experienceSubContent2Aero : "Brindé soporte integral para aplicaciones como Aranda, SIIF, JDE Oracle, Kactus, directorio activo, soporte a trabajadores remotos.",
+                projectsTitle : "Proyectos",
+                projectsImage1: "Imagen ",
+                projectsImage1Alt: "Imagen con pagina de Rick and Morty ",
+                projectsTitle1: "Wiki de Rick and Morty",
+                projectsTitle2: "Clone de Netflix",
+                projectsTitle3: "Clone de Twitter",
+                projectDescriptionA: "Rick & Morty Wiki de personajes, puedes navegar para...",             
+                projectDescriptionB: "En este clon de Netflix, puedes registrarte e iniciar sesión ...",
+                projectDescriptionC : "Aquí, en la aplicación clone de Twitter, puedes...",
+                projectTotalDescA: "Este es Rick & Morty Character Wiki donde los usuarios pueden navegar para investigar diferentes personajes, ubicaciones y episodios, y también verificar si un personaje aun vive. Se hizo con Reactjs 18.2.0, recuperando datos de una API de Rick and Morty. Diseñado con bootstrap 5.3.2",
+                projectTotalDescB: "Clon de Netflix donde los usuarios pueden registrarse e iniciar sesión, pueden agregar películas favoritas o eliminarlas. Además, podrán ver la última película en tendencia organizada. Esta aplicación se creó usando la versión ReactJS 18.2.0 y Tailwind CSS 8.5.5, los datos se almacenan en la versión Firebase 10.4.0 usando la base de datos en la nube NoSQL Firestore para el backend, también se aplicó el servicio de paquete de autenticación.",
+                projectTotalDescC: "Clon de Twitter donde los usuarios pueden compartir ideas y comentar; si los usuarios quieren compartir una idea, deben estar registrados y luego iniciar sesión, pueden publicar sus propias ideas, comentar o simplemente dar un me gusta. Para construir esta aplicación web se implementó Laravel Framework 10.35.0. Esta aplicación almacena datos en un servidor web SQL. La aplicación se implementó en Vercel CLI.",
+                more: "más.",
+                demo : "Demo.",
+                source : "Fuente",
+                close : "Cerrar",
+                contactTitle : 'Contacto',
+                contactP : '¡No dudes en comunicarte!',
+                
+
+                
+            }, 
+                    
+
+        },
+    }
+})

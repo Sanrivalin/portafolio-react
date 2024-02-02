@@ -1,0 +1,29 @@
+:root {
+    /* Colours */
+    --color-bg: #fced97;
+    --color-text: #130A0C;
+    --color-primary: #251418;
+    --color-secondary: #918d61;
+    --color-tertiary:#fced97;
+    --color-brown: #825a48;
+    --color-bg-soft: #fef5b9;
+    --toggle-bg: #7E774C;
+    --toggle-fg: #251418;
+    --about-bg: #918d6199;
+    --hover-btn:#463233;
+    --font-roboto: "Roboto";
+  }
+
+  [data-theme="dark"] {
+    --color-bg: #918d61;
+    --color-text: #130A0C;
+    --color-primary: #FF7E58;
+    --color-secondary: #7E774C;
+    --color-tertiary:#fced97;
+    --color-brown: #825a48;
+    --color-bg-soft: #251418;
+    --toggle-fg: #251418;
+    --hover-btn:#FF7E58;
+    /* Fonts */
+    --font-roboto: "Roboto";
+  }

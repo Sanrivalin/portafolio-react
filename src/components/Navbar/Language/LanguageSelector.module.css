@@ -1,0 +1,46 @@
+@import "../../../vars.css";
+
+
+.btnContainer {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 0px 5px 0px 29px;;
+    margin: 0;
+}
+
+button {
+    border-radius: 8px;
+    color: var(--color-text);
+    border: 3px solid var(--color-text);
+    padding:11px 8px 11px 8px;
+    font-size:0.8em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color:transparent;
+    cursor: pointer;
+    transition:border-color 0.25;
+    
+}
+
+button:hover {
+    border-color:var(--hover-btn);
+}
+
+button.selected {
+    background-color: var(--color-primary);
+    color: azure;
+}
+
+@media screen and (max-width: 1200px) {
+    button {
+        padding:9px 6px 9px 6px;
+        font-size:0.6em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .btnContainer {
+        padding:0px 6px 9px 0px;
+    }
+}
