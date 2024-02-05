@@ -59,8 +59,14 @@
 
 
 .heroImg {
+<<<<<<< HEAD
   width: 44%;
   z-index: 1;
+=======
+  width: 50%;
+  z-index: 1;
+
+>>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -108,11 +114,14 @@
   z-index: 0;
 }
 
+<<<<<<< HEAD
 @media screen and ( max-width: 768px ) {
 
 
 }
 
+=======
+>>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;

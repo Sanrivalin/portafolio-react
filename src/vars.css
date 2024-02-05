@@ -11,8 +11,31 @@
     --toggle-fg: #251418;
     --about-bg: #918d6199;
     --hover-btn:#463233;
+<<<<<<< HEAD
         /* Fonts */
     --font-roboto: "Roboto";
+=======
+
+    /* Fonts */
+    --font-roboto: "Roboto";
+
+    /* --color-text: #130A0C;
+    --color-primary: #251418;
+    rgb(19, 10, 12)
+    --color-secondary: #918d61;
+    rgb(145 , 141 , 97)
+    --color-tertiary:#fced97;
+    --color-quaternary:#fffbaf;
+    --color-dark:#130B0C;
+    --color-bg: #fef5b9;
+    --color-brown: #825a48;
+    rgb(130,90,72) */
+  
+    /* Dark Mode */
+    /* --color-secondary-dark: #FF7E58;
+    --color-bg-dark: #7E774C;
+    --color-tertiary-dark: #7F7B5D; */
+>>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
   }
 
   [data-theme="dark"] {

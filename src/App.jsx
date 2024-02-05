@@ -11,7 +11,10 @@ import { Toggle } from "./components/Toggle/Toggle";
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
 function App() {
   // const preference = window.matchMedia("(prefers-color-schema: dark)").matches;
   const [isDark,setIsDark] = useLocalStorage("isDark",false);
