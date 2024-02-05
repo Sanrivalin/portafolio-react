@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import styles from "./ProjectsCard.module.css";
 import { getImageUrl } from "../../utils";
 import MyVerticallyCenteredModal from "./MyVerticallyCenteredModal";
-import Button from 'react-bootstrap/Button';
-import { useTranslation } from 'react-i18next';
-
-
+import Button from "react-bootstrap/Button";
+import { useTranslation } from "react-i18next";
 
 export const ProjectCard = () => {
   const [modalShow, setModalShow] = useState(false);
@@ -14,7 +12,6 @@ export const ProjectCard = () => {
   const { t } = useTranslation();
   return (
     <>
-
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <img
@@ -90,8 +87,6 @@ export const ProjectCard = () => {
           show={modalShow2}
           onHide={() => setModalShow2(false)}
           projectId={2}
-          
-          
         />
 
         <ul className={styles.skills}>
@@ -172,4 +167,3 @@ export const ProjectCard = () => {
     </>
   );
 };
-

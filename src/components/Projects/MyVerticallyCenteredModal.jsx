@@ -4,14 +4,13 @@ import Modal from "react-bootstrap/Modal";
 import styles from "./MyVerticallyCenteredModal.module.css";
 import { useTranslation } from "react-i18next";
 
-
 function MyVerticallyCenteredModal(props) {
   const { show, onHide, projectId } = props;
   const { t } = useTranslation();
 
   let modalContent = null;
 
-  if(projectId === 1){
+  if (projectId === 1) {
     modalContent = (
       <>
         <Modal.Header className={styles.header} closeButton></Modal.Header>
@@ -21,13 +20,12 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Body>
         <Modal.Footer className={styles.footer}>
           <Button variant="dark" onClick={props.onHide}>
-            {t('close')}
+            {t("close")}
           </Button>
-        </Modal.Footer>     
-      
+        </Modal.Footer>
       </>
     );
-  } else if(projectId === 2) {
+  } else if (projectId === 2) {
     modalContent = (
       <>
         <Modal.Header className={styles.header} closeButton></Modal.Header>
@@ -37,13 +35,11 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Body>
         <Modal.Footer className={styles.footer}>
           <Button variant="dark" onClick={props.onHide}>
-          {t('close')}
+            {t("close")}
           </Button>
-        </Modal.Footer>   
-      
+        </Modal.Footer>
       </>
     );
-
   } else {
     modalContent = (
       <>
@@ -54,26 +50,23 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Body>
         <Modal.Footer className={styles.footer}>
           <Button variant="dark" onClick={props.onHide}>
-          {t('close')}
+            {t("close")}
           </Button>
-        </Modal.Footer>        
+        </Modal.Footer>
       </>
     );
   }
 
-
   return (
     <>
       <Modal
-        {...props}     
+        {...props}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-      
         className={styles.container}
       >
         {modalContent}
-        
       </Modal>
     </>
   );

@@ -2,7 +2,6 @@ import i18n from 'i18next'
 import  LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
-
 i18n.use(LanguageDetector).use(initReactI18next).init({
     debug: true,
     fallbackLng: "en",
@@ -54,11 +53,8 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 source : "Source",
                 close : "Close",
                 contactTitle : 'Contact',
-                contactP : 'Feel free to reach out!',
-
-                
-            },
-                    
+                contactP : 'Feel free to reach out!',                
+            },                    
         },
         es : {
             translation : {
@@ -69,7 +65,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 navTitulo : "Portafolio",
                 navToggle : 'Modo Oscuro',
                 heroGreeting : "Hola, soy Santiago",
-                heroParagraph: "Soy un desarrollador frontend con experiencia en la creación de sitios responsivos y optimizados.",
+                heroParagraph: "Soy un desarrollador full-stack con 2 años de experiencia usando React JS y Laravel. ¡Comunícate si deseas obtener más información!",
                 heroContact : "Contáctame",
                 aboutTitle : "Sobre Mí",
                 aboutSubTitle1 : "Desarrolador Frontend",
@@ -105,12 +101,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 close : "Cerrar",
                 contactTitle : 'Contacto',
                 contactP : '¡No dudes en comunicarte!',
-                
-
-                
-            }, 
-                    
-
+            },
         },
     }
 })

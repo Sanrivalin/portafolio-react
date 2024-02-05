@@ -59,9 +59,8 @@
 
 
 .heroImg {
-  width: 50%;
+  width: 44%;
   z-index: 1;
-
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -107,6 +106,11 @@
   background: rgba(145, 141, 97, 0.7);
   filter: blur(100px);
   z-index: 0;
+}
+
+@media screen and ( max-width: 768px ) {
+
+
 }
 
 @media screen and (max-width: 830px) {

@@ -29,7 +29,7 @@ button:hover {
 
 button.selected {
     background-color: var(--color-primary);
-    color: azure;
+    color: var(--color-tertiary)
 }
 
 @media screen and (max-width: 1200px) {
