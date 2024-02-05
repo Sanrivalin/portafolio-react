@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from "./Contact.module.css"
 import { getImageUrl } from "../../utils"
-<<<<<<< HEAD
 import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
@@ -11,15 +10,6 @@ export const Contact = () => {
         <div className={styles.text}>
             <h2>{t('contactTitle')}</h2>
             <p>{t('contactP')}</p>
-=======
-
-export const Contact = () => {
-  return (
-    <footer id="contact" className={styles.container}>
-        <div className={styles.text}>
-            <h2>Contact</h2>
-            <p>Feel free to reach out!</p>
->>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
         </div>
         <ul className={styles.links}>
             <li className={styles.link}>

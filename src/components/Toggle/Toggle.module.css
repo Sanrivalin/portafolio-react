@@ -3,11 +3,7 @@
 .container {
     position: absolute;
     top:2em;
-<<<<<<< HEAD
     right: 3.2em;   
-=======
-    right: 2.2em;   
->>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
     padding-top: 32px;
     margin: 0 8%;
 }

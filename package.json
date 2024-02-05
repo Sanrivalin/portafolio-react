@@ -13,18 +13,12 @@
     "@fontsource/outfit": "^5.0.8",
     "@fontsource/roboto": "^5.0.8",
     "bootstrap": "^5.3.2",
-<<<<<<< HEAD
     "i18next": "^23.8.1",
     "i18next-browser-languagedetector": "^7.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^14.0.1",
-=======
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.10.0",
-    "react-dom": "^18.2.0",
->>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
     "use-local-storage": "^3.0.0"
   },
   "devDependencies": {

@@ -27,11 +27,7 @@
 
 .menuItems {
   display: flex;
-<<<<<<< HEAD
   gap: 36px;
-=======
-  gap: 47px;
->>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
   list-style: none;
 }
 
@@ -52,7 +48,6 @@
 
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 1200px) {
   .menuItems {
     
@@ -78,18 +73,13 @@
 
   }
 }
-=======
->>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
 
 
 @media screen and (max-width: 830px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-<<<<<<< HEAD
     padding-top: 18px;
-=======
->>>>>>> 04041326612fb459df71b4f0903da3a5c775b193
   }
 
   .menu {
