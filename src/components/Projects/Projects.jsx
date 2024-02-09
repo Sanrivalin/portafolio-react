@@ -9,7 +9,7 @@ export const Projects = () => {
     <section className={styles.container} id="projects">
       <h2 className={styles.title}>{t("projectsTitle")}</h2>
       <div className={styles.projects}>
-        <ProjectCard />;
+        <ProjectCard />
       </div>
     </section>
   );

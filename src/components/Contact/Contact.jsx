@@ -9,7 +9,7 @@ export const Contact = () => {
     <footer id="contact" className={styles.container}>
         <div className={styles.text}>
             <h2>{t('contactTitle')}</h2>
-            <p>{t('contactP')}</p>
+            {/* <p>{t('contactP')}</p> */}
         </div>
         <ul className={styles.links}>
             <li className={styles.link}>

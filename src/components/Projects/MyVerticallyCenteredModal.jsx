@@ -39,7 +39,7 @@ function MyVerticallyCenteredModal(props) {
           </Button>
         </Modal.Footer>
       </>
-    );
+    )
   } else {
     modalContent = (
       <>
