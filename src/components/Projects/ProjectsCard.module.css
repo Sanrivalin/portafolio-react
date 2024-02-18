@@ -2,7 +2,6 @@
 
 .container {
   display: flex;
-  
   flex-direction: column;
   border-radius: 10px;
   background: linear-gradient(0deg, var(--color-bg) 0%, var(--toggle-bg) 100%);
@@ -11,15 +10,30 @@
   max-width: 345px;
 }
 
-
-
-.image {
+.imageContainer {
   margin-bottom: 26px;
-  border-radius:15px ;
+  border-radius: 15px;
+  overflow: hidden; /* Para recortar cualquier parte de la imagen que se extienda más allá de los límites */
   width: 100%;
   height: 200px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 2.1);
 }
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  transition: transform 1.2s ease-in-out;
+  -webkit-transition: transform 1.2s ease-in-out;
+  -moz-transition: transform 1.2s ease-in-out;
+  -ms-transition: transform 1.2s ease-in-out;
+  -o-transition: transform 1.2s ease-in-out;
+}
+
+.imageContainer:hover img {
+  transform: scale(1.4);/*Realizaunzoomal110%deltamañooriginal*/
+  cursor: zoom-in;
+  
+}
+
 
 .title {
   font-size: 25px;

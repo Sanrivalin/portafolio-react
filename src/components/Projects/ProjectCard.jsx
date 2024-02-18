@@ -15,7 +15,7 @@ export const ProjectCard = () => {
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <img
-            src={getImageUrl("projects/rickandmorty3.png")}
+            src={getImageUrl("projects/RickAndMortyPortfolio.png")}
             alt={t(" projectsImage1Alt")}
             className={styles.image}
           />
@@ -66,7 +66,7 @@ export const ProjectCard = () => {
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <img
-            src={getImageUrl("projects/netflix3.png")}
+            src={getImageUrl("projects/netflixPortfolio.png")}
             alt={t(" projectsImage1Alt")}
             className={styles.image}
           />
@@ -117,7 +117,7 @@ export const ProjectCard = () => {
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <img
-            src={getImageUrl("projects/twitter2.png")}
+            src={getImageUrl("projects/TwitterPortfolio.png")}
             alt={t(" projectsImage1Alt")}
             className={styles.image}
           />
