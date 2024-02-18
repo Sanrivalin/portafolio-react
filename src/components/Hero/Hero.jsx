@@ -12,7 +12,7 @@ export const Hero = () => {
         <p className={styles.description}>
         {t('heroParagraph')}
         </p>
-        <a href="santiagorivasmolina@gmail.com" className={styles.contactBtn}>
+        <a href="#contact" className={styles.contactBtn}>
         {t('heroContact')}
         </a>
       </div>

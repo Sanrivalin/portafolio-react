@@ -9,6 +9,7 @@ export const ProjectCard = () => {
   const [modalShow, setModalShow] = useState(false);
   const [modalShow2, setModalShow2] = useState(false);
   const [modalShow3, setModalShow3] = useState(false);
+  const [modalShow4, setModalShow4] = useState(false);
   const { t } = useTranslation();
   return (
     <>
@@ -156,6 +157,57 @@ export const ProjectCard = () => {
           </a>
           <a
             href="https://github.com/Sanrivalin/ideas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            {t("source")}
+          </a>
+        </div>
+      </div>
+
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <img
+            src={getImageUrl("projects/PetsAndLovePortfolio.png")}
+            alt={t(" projectsImage1Alt")}
+            className={styles.image}
+          />
+        </div>
+        <h3 className={styles.title}>{t("projectsTitle4")}</h3>
+        <p className={styles.description}>
+          {t("projectDescriptionD")}
+          <Button
+            variant="link"
+            className="text-dark link-offset-2 link-offset-3-hover"
+            size="sm"
+            onClick={() => setModalShow4(true)}
+          >
+            {t("more")}
+          </Button>
+        </p>
+        <MyVerticallyCenteredModal
+          show={modalShow4}
+          onHide={() => setModalShow4(false)}
+          projectId={4}
+        />
+
+        <ul className={styles.skills}>
+          <li className={styles.skill}>Wordpress</li>
+          <li className={styles.skill}>PHP</li>
+          <li className={styles.skill}>CSS</li>
+        </ul>
+        <div className={styles.links}>
+          <a
+            href="https://petsandlove.rf.gd/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            {t("demo")}
+          </a>
+          <a
+            href="https://github.com/Sanrivalin/petslove"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}

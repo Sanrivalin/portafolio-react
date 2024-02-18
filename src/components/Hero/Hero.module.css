@@ -24,13 +24,12 @@
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
-  background: linear-gradient(
+  /* background: linear-gradient(
     25deg,
     rgba(19, 10, 12, 1) 70%,
     rgba(19, 10, 12, 0) 120%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  ); */
+  color: var(--color-text)!important;
 }
 
 .description {

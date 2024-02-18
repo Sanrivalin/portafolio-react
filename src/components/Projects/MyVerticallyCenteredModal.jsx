@@ -40,13 +40,28 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Footer>
       </>
     )
-  } else {
+  } else if (projectId === 3) {
     modalContent = (
       <>
         <Modal.Header className={styles.header} closeButton></Modal.Header>
         <Modal.Body className={styles.content}>
           <h4>{t("projectsTitle3")}</h4>
           <p>{t("projectTotalDescC")}</p>
+        </Modal.Body>
+        <Modal.Footer className={styles.footer}>
+          <Button variant="dark" onClick={props.onHide}>
+            {t("close")}
+          </Button>
+        </Modal.Footer>
+      </>
+    )
+  } else {
+    modalContent = (
+      <>
+        <Modal.Header className={styles.header} closeButton></Modal.Header>
+        <Modal.Body className={styles.content}>
+          <h4>{t("projectsTitle4")}</h4>
+          <p>{t("projectTotalDescD")}</p>
         </Modal.Body>
         <Modal.Footer className={styles.footer}>
           <Button variant="dark" onClick={props.onHide}>

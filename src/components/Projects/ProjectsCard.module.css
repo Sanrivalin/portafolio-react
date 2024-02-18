@@ -13,7 +13,7 @@
 .imageContainer {
   margin-bottom: 26px;
   border-radius: 15px;
-  overflow: hidden; /* Para recortar cualquier parte de la imagen que se extienda más allá de los límites */
+  overflow: hidden;
   width: 100%;
   height: 200px;
 }
@@ -22,16 +22,11 @@
   width: 100%;
   height: auto;
   transition: transform 1.2s ease-in-out;
-  -webkit-transition: transform 1.2s ease-in-out;
-  -moz-transition: transform 1.2s ease-in-out;
-  -ms-transition: transform 1.2s ease-in-out;
-  -o-transition: transform 1.2s ease-in-out;
 }
 
 .imageContainer:hover img {
-  transform: scale(1.4);/*Realizaunzoomal110%deltamañooriginal*/
-  cursor: zoom-in;
-  
+  transform: scale(1.4);
+  cursor: zoom-in;  
 }
 
 
@@ -46,8 +41,6 @@
   font-weight: 400;
   color: var(--color-text);
 }
-
-
 
 .skills {
   width: 100%;
