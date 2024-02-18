@@ -52,6 +52,12 @@
     -o-transform: translateX(98%);
 }
 
+.imgToggle {
+    padding:0%;
+    margin: 0%;
+    font-size: 19px;
+}
+
 @media screen and  (max-width: 830px){
     .container {        
         right: 3.6em; 
