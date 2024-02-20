@@ -28,7 +28,11 @@
       "imageSrc": "skills/figmaBlack.png"
     },
     {
-      "title": "Javascript",
+      "title": "JavaScript",
       "imageSrc": "skills/javascriptBlack.png"
+    },
+    {
+      "title": "WordPress",
+      "imageSrc": "skills/wordPress64.png"
     }
   ]
