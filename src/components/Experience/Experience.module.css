@@ -18,7 +18,7 @@
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 14px;
 }
 
@@ -44,10 +44,33 @@
   justify-content: center;
   width: 120px;
   height: 120px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+
+.spin {
+  animation: spinAnimation 2.5s infinite ease-in;
+  -webkit-animation: spinAnimation 2.5s infinite ease-in;
 }
 
 .skillImageContainer img {
   width: 75px;
+}
+
+@keyframes spinAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
 }
 
 .skill p {

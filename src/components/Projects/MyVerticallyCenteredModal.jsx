@@ -55,13 +55,43 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Footer>
       </>
     )
-  } else {
+  } else if (projectId === 4) {
     modalContent = (
       <>
         <Modal.Header className={styles.header} closeButton></Modal.Header>
         <Modal.Body className={styles.content}>
           <h4>{t("projectsTitle4")}</h4>
           <p>{t("projectTotalDescD")}</p>
+        </Modal.Body>
+        <Modal.Footer className={styles.footer}>
+          <Button variant="dark" onClick={props.onHide}>
+            {t("close")}
+          </Button>
+        </Modal.Footer>
+      </>
+    )
+  } else if (projectId === 5) {
+    modalContent = (
+      <>
+        <Modal.Header className={styles.header} closeButton></Modal.Header>
+        <Modal.Body className={styles.content}>
+          <h4>{t("projectsTitle5")}</h4>
+          <p>{t("projectTotalDescE")}</p>
+        </Modal.Body>
+        <Modal.Footer className={styles.footer}>
+          <Button variant="dark" onClick={props.onHide}>
+            {t("close")}
+          </Button>
+        </Modal.Footer>
+      </>
+    )
+  } else {
+    modalContent = (
+      <>
+        <Modal.Header className={styles.header} closeButton></Modal.Header>
+        <Modal.Body className={styles.content}>
+          <h4>{t("projectsTitle6")}</h4>
+          <p>{t("projectTotalDescF")}</p>
         </Modal.Body>
         <Modal.Footer className={styles.footer}>
           <Button variant="dark" onClick={props.onHide}>

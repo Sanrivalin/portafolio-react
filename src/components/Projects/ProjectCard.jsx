@@ -10,9 +10,12 @@ export const ProjectCard = () => {
   const [modalShow2, setModalShow2] = useState(false);
   const [modalShow3, setModalShow3] = useState(false);
   const [modalShow4, setModalShow4] = useState(false);
+  const [modalShow5, setModalShow5] = useState(false);
+  const [modalShow6, setModalShow6] = useState(false);
   const { t } = useTranslation();
   return (
     <>
+      {/* Rick And Morty Card */}
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <img
@@ -63,7 +66,7 @@ export const ProjectCard = () => {
           </a>
         </div>
       </div>
-
+      {/* Netflix Clone Card */}
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <img
@@ -114,7 +117,7 @@ export const ProjectCard = () => {
           </a>
         </div>
       </div>
-
+      {/* Twitter Clone Card */}
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <img
@@ -165,7 +168,7 @@ export const ProjectCard = () => {
           </a>
         </div>
       </div>
-
+      {/* Pets And Love Card */}
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <img
@@ -208,6 +211,109 @@ export const ProjectCard = () => {
           </a>
           <a
             href="https://github.com/Sanrivalin/petslove"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            {t("source")}
+          </a>
+        </div>
+      </div>
+      {/* Encryptor and Decryptor Card */}
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <img
+            src={getImageUrl("projects/DecryptorPortfolio.png")}
+            alt={t(" projectsImage1Alt")}
+            className={styles.image}
+          />
+        </div>
+        <h3 className={styles.title}>{t("projectsTitle5")}</h3>
+        <p className={styles.description}>
+          {t("projectDescriptionE")}
+          <Button
+            variant="link"
+            className="text-dark link-offset-2 link-offset-3-hover"
+            size="sm"
+            onClick={() => setModalShow5(true)}
+          >
+            {t("more")}
+          </Button>
+        </p>
+        <MyVerticallyCenteredModal
+          show={modalShow5}
+          onHide={() => setModalShow5(false)}
+          projectId={5}
+        />
+
+        <ul className={styles.skills}>
+          <li className={styles.skill}>JavaScript</li>
+          <li className={styles.skill}>CSS</li>
+          <li className={styles.skill}>HTML</li>
+        </ul>
+        <div className={styles.links}>
+          <a
+            href="https://encriptador-alura-topaz.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            {t("demo")}
+          </a>
+          <a
+            href="https://github.com/Sanrivalin/encriptadorAlura/tree/main"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            {t("source")}
+          </a>
+        </div>
+      </div>
+
+      {/* Shopping Car Card */}
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <img
+            src={getImageUrl("projects/ShoppingCartPortfolio.png")}
+            alt={t(" projectsImage1Alt")}
+            className={styles.image}
+          />
+        </div>
+        <h3 className={styles.title}>{t("projectsTitle6")}</h3>
+        <p className={styles.description}>
+          {t("projectDescriptionF")}
+          <Button
+            variant="link"
+            className="text-dark link-offset-2 link-offset-3-hover"
+            size="sm"
+            onClick={() => setModalShow6(true)}
+          >
+            {t("more")}
+          </Button>
+        </p>
+        <MyVerticallyCenteredModal
+          show={modalShow6}
+          onHide={() => setModalShow6(false)}
+          projectId={6}
+        />
+
+        <ul className={styles.skills}>
+          <li className={styles.skill}>JavaScript</li>
+          <li className={styles.skill}>HTML</li>
+          <li className={styles.skill}>CSS</li>
+        </ul>
+        <div className={styles.links}>
+          <a
+            href="https://shopping-cart-nine-chi.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            {t("demo")}
+          </a>
+          <a
+            href="https://github.com/Sanrivalin/shoppingCart"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}

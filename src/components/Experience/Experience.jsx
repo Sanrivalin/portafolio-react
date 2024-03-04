@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
@@ -7,15 +7,27 @@ import { useTranslation } from 'react-i18next';
 
 export const Experience = () => {
   const { t } = useTranslation();
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
   return (
     <section className={styles.container} id="experience">
       <h2 className={styles.title}>{t('experienceTitle')}</h2>
       <div className={styles.content}>
         <div className={styles.skills}>
-          {skills.map((skill, id) => {
+          {skills.map((skill, index) => {
             return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
+              <div key={index} className={styles.skill}>
+                <div className={`${styles.skillImageContainer} ${
+                    hoveredIndex === index ? styles.spin : ""
+                  }`} onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}>
                   <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
                 </div>
                 <p>{skill.title}</p>
