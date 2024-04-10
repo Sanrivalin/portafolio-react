@@ -9,6 +9,7 @@
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+  padding: 180px 0px 140px 0px;
 }
 
 .content {
@@ -107,15 +108,12 @@
   z-index: 0;
 }
 
-@media screen and ( max-width: 768px ) {
-
-
-}
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
     margin-top: 102px;
+    padding: 0px 0px 0px 0px;
   }
 
   .content {
