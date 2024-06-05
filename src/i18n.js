@@ -114,7 +114,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 projectTotalDescE: "Un minijuego basado en web diseñado para involucrar a los usuarios en una experiencia de descifrado desafiante pero gratificante. Elaborado con una combinación de tecnologías JavaScript, CSS y HTML, este juego interactivo pide a los jugadores descifrar tres palabras elegidas estratégicamente para revelar una pista crucial.",
                 projectTotalDescF: "Una plataforma intuitiva que integra a la perfección una sólida funcionalidad de carrito de compras. Desarrollada utilizando una combinación de JavaScript, CSS y HTML, esta página web rica en funciones permite a los usuarios gestionar sin esfuerzo sus experiencias de compra. Con la capacidad de agregar, eliminar y actualizar productos, así como calcular la suma total de artículos en el carrito, 'ShopCart' ofrece un proceso de compra ágil y eficiente.",
                 more: "más.",
-                demo : "Demo.",
+                demo : "Demo",
                 source : "Fuente",
                 close : "Cerrar",
                 contactTitle : 'Contacto',

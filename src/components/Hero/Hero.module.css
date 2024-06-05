@@ -37,6 +37,7 @@
   font-size: 23px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
+  max-width: 60%;
 }
 
 .contactBtn {
@@ -122,9 +123,11 @@
 
   .title {
     font-size: 53px;
-    font-weight: 900;
-    
-    
+    font-weight: 900;    
+  }
+
+  .description {
+    max-width: 100%;
   }
 }
 
@@ -146,5 +149,9 @@
 
   .contactBtn {
     font-size: 27px;
+  }
+
+  .description {
+    max-width: 100%;
   }
 }
