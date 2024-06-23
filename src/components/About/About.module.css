@@ -26,7 +26,8 @@
 }
 
 .aboutImage {
-  width: 35%;
+  max-width:  20%;
+
 }
 
 .aboutItems {
