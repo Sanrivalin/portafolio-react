@@ -11,7 +11,7 @@ export const About = () => {
       <div className={styles.content}>
         <img
           src={getImageUrl("hero/sobremi.png")}
-          alt="Me sitting with a laptop"
+          alt="Someone sitting crossed legs with a laptop"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>

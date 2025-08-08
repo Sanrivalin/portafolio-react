@@ -5,10 +5,8 @@
   background-color: rgba(130, 90, 72, 0.4);
   border-radius: 15px;
   padding: 73px;
-  margin-top: 129px;
+  margin: 129px 10% 0; /* Shorthand for top, right, bottom, left */
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .title {
@@ -26,8 +24,7 @@
 }
 
 .aboutImage {
-  max-width:  20%;
-
+  max-width: 20%;
 }
 
 .aboutItems {
@@ -70,8 +67,8 @@
 @media screen and (max-width: 830px) {
   .container {
     background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 73px 0; /* Shorthand for padding top/bottom and left/right */
+    margin-top: 70px; /* Overrides the previous margin-top */
   }
 
   .content {
@@ -87,13 +84,6 @@
   }
 
   .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .container {
-    margin-top: 70px;
+    padding: 25px 0; /* Shorthand for padding top/bottom and left/right */
   }
 }

@@ -12,13 +12,13 @@ export const Hero = () => {
         <p className={styles.description}>
         {t('heroParagraph')}
         </p>
-        <a href="#contact" className={styles.contactBtn}>
+        <a href="#contact" id="contact_1" className={styles.contactBtn}>
         {t('heroContact')}
         </a>
       </div>
       <img
         src={getImageUrl("hero/hero.png")}
-        alt="Hero image of me"
+        alt="An Avatar greeting"
         className={styles.heroImg}
       />
       <div className={styles.topBlur} />

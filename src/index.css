@@ -10,21 +10,26 @@ html {
   scroll-behavior: smooth;
 }
 
-._content_5u14q_3, ._header_5u14q_3, ._footer_5u14q_3 {
+._content_5u14q_3,
+._header_5u14q_3,
+._footer_5u14q_3 {
   background: none;
   box-shadow: none;
 }
 
-.modal-header, .modal-footer {
-  border-bottom:none;
+.modal-header,
+.modal-footer {
   border-top: none;
+  border-bottom: none;
 }
 
 .modal-content {
-  background:var(--color-brown) ;
+  background: var(--color-brown);
   color: var(--color-bg-soft);
 }
 
 ._title_1oo99_22 {
-  color: var(--color-bg-soft)!important;
+  /* Avoid using `!important` if possible, as it can make styles
+     difficult to override. It's better to manage specificity. */
+  color: var(--color-bg-soft);
 }

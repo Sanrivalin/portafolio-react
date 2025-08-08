@@ -15,7 +15,13 @@ export const Toggle = ({ handleChange, isChecked }) => {
         onChange={handleChange}
         checked={isChecked}
       />
-      <label htmlFor="check"><img className="imgToggle" src={getImageUrl("hero/moon.png")} alt="Cursor icon" /></label>
+      <label htmlFor="check">
+        <img
+          className="imgToggle"
+          src={getImageUrl("hero/moon.png")}
+          alt="Cursor icon"
+        />
+      </label>
     </div>
   );
 };

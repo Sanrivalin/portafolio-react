@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import useLocalStorage from 'use-local-storage';
 import styles from "./App.module.css";
 import { About } from "./components/About/About";
@@ -8,6 +9,7 @@ import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
 import { Toggle } from "./components/Toggle/Toggle";
+/* import Blog from './components/Blog/Blog';  */
 
 
 

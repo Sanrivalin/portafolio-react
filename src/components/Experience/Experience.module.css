@@ -2,9 +2,7 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 79px 10% 0; /* Shorthand for top, right, bottom, left */
 }
 
 .title {
@@ -13,7 +11,7 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0; /* Shorthand for top/bottom and left/right */
 }
 
 .content {
@@ -45,16 +43,12 @@
   justify-content: center;
   width: 120px;
   height: 120px;
+  box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s ease-in-out;
-  -webkit-transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out;
-  -ms-transition: transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
 }
 
 .spin {
   animation: spinAnimation 2.5s infinite ease-in;
-  -webkit-animation: spinAnimation 2.5s infinite ease-in;
 }
 
 .skillImageContainer img {
@@ -67,11 +61,7 @@
   }
   100% {
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
+  }
 }
 
 .skill p {
@@ -92,8 +82,11 @@
   flex-direction: row;
   align-items: center;
   gap: 17px;
-  background: #918d61;
-  background: linear-gradient(270deg,  rgba(130, 90, 72, 0.4) 0%, rgba(145, 141, 97, 0) 100%);
+  background: linear-gradient(
+    270deg,
+    rgba(130, 90, 72, 0.4) 0%,
+    rgba(145, 141, 97, 0) 100%
+  );
   border-radius: 10px;
   padding: 24px;
 }

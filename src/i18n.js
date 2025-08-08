@@ -1,125 +1,174 @@
-import i18n from 'i18next'
-import  LanguageDetector from 'i18next-browser-languagedetector'
-import { initReactI18next } from 'react-i18next'
+import i18n from "i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import { initReactI18next } from "react-i18next";
 
-i18n.use(LanguageDetector).use(initReactI18next).init({
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
     debug: true,
     fallbackLng: "en",
     interpolation: {
-        escapeValue: false,
+      escapeValue: false,
+    },
+    resources: {
+      en: {
+        translation: {
+          navOption1: "About",
+          navOption2: "Experience",
+          navOption3: "Projects",
+          navOption4: "Contact",
+          navTitulo: "Portfolio",
+          navToggle: "Dark Mode",
+          heroGreeting: "Hi, I'm Santiago!",
+          heroParagraph:
+            "A bilingual Systems Engineer with 2 years of dedicated experience in strategic digital marketing optimization and a total of 6 years in IT. My focus is on optimizing campaigns on Meta Ads, SEO, and Google Ads for digital services.",
+          heroContact: "Contact Me",
+          aboutTitle: "About",
+          aboutSubTitle1: "Meta Ads Specialist",
+          aboutSubTitle2: "SEO Specialist",
+          aboutSubTitle3: "Google Search ads Specialist",
+          aboutSubContent1:
+            "Meta Ads specialist with experience advising campaigns through budget optimization, metrics analysis, and technical implementations (API, pixel). Skilled in designing creatives, leveraging formats and color palettes aligned with trends, crafting effective copy, and producing performance reports.",
+          aboutSubContent2:
+            "SEO specialist with a focus on strategically optimizing online visibility. I have a solid track record of improving website rankings through keyword analysis, on-page optimization, and the creation of high-impact content to increase traffic and digital presence.",
+          aboutSubContent3:
+            "SEM and Google Ads Specialist with a strong track record in managing and optimizing campaigns to maximize return on investment. I specialize in strategic keyword research, bid optimization, and high-performing ad copy to achieve specific business goals.",
+          experienceTitle: "Experience",
+          experienceSubTitleTP:
+            "IT Request Management Analyst, Teleperformance",
+          experienceDateTP: "Apr, 2021 - Jan, 2023",
+          experienceSubContent1TP:
+            "Delivered 1 level service in 5 LatAm countries, while handling 9 users per day",
+          experienceSubContent2TP:
+            "Analyze user requirements, and supported agile development",
+          experienceSubContent3TP:
+            "Resolved software and web application issues through technical advisement.",
+          experienceSubTitleAero:
+            "Digital Marketing Specialist",
+          experienceDateAero: "May, 2024 - Present ",
+          experienceSubContent1Aero:
+            "Campaign Management: Designed and executed PPC and CPM campaigns for over 20 advertisers per quarter. This included strategic planning, buyer persona definition, KPI setting, search engine optimization, and funnel-stage segmentation.",
+          experienceSubContent2Aero:
+            "Technical Implementation and Automation: Experience in configuring pixels, Conversions API, schema markup, sitemaps, and CRM automations with tools like Zapier, Make, and HubSpot.",
+          experienceSubContent3Aero: 
+            "Data Analysis and Continuous Optimization: Ability to analyze online visibility and optimize performance through detailed reports, custom dashboards, and A/B testing.",
+          projectsTitle: "Projects",
+          projectsImage1: "Imagen ",
+          projectsImage1Alt: "Someone explaining a workflow digital marketing",
+          projectsTitle1: "From zero to 4,2x ROAS",
+          projectsTitle2: "Search Engine Marketing (SEM) & PPC Management",
+          projectsTitle3: "Organic Growth & Content Strategy",
+          projectDescriptionA:
+            "The project generated a 45% increase in conversions with a $10,000 investment in Meta advertising. This outcome was made possible by a comprehensive strategy that combined intelligent planning with technical implementation and creative direction.",
+          projectDescriptionB:
+            "The project resulted in a 30% increase in click-through rate (CTR) and a 20% reduction in cost per acquisition (CPA), with an $8,000 budget. These outcomes demonstrate a strategic approach to Google Ads campaign management focused on maximizing return on investment.",
+          projectDescriptionC:
+            "This project demonstrates my focus is on creating a robust foundation for organic growth. I combine on-page and off-page SEO principles to enhance brand visibility, drive organic traffic, and establish a strong online presence.",
+          projectDescriptionAul:
+            "Strategic Planning: Developed a full-funnel advertising strategy from the ground up, defining key KPIs and conversion events to optimize the customer journey.",
+          projectDescriptionAul2:
+            "Technical Implementation: Ensured data integrity by configuring the Meta Pixel and Conversions API (CAPI) for precise tracking and optimization.",
+           projectDescriptionAul3:
+            "Creative Direction: Guided the creation of compelling ad creatives and messaging tailored to specific audience segments, maximizing engagement and conversion rates.",  
+          projectDescriptionBul:
+            "Keyword Strategy: Conducted in-depth keyword research to identify high-intent search queries and align them with campaign goals.",  
+          projectDescriptionBul2:
+            "Ad Campaign Structure: Built and managed targeted Google Ads campaigns, including search and display networks, with a focus on optimizing ad copy and bidding strategies.",  
+          projectDescriptionBul3:
+            "Performance Analysis: Monitored and analyzed campaign performance, making data-driven adjustments to improve click-through rates (CTR) and lower cost-per-acquisition (CPA).", 
+          projectDescriptionSEO1:
+          "Keyword Research: Conducted an exhaustive analysis to identify relevant, high-intent keywords, which were then aligned with business objectives and content strategy.",
+          projectDescriptionSEO2:
+          "Content Strategy & On-Page SEO: Developed a content calendar and optimized both new and existing content for SEO, improving the website's architecture and user experience.",
+          projectDescriptionSEO3:
+          "Analysis & Optimization: Monitored organic performance using analytics tools to identify growth opportunities, improve search engine results page (SERP) rankings, and continuously refine the content strategy.",
+          more: "more.",
+          demo: "Demo",
+          source: "Source",
+          close: "Close",
+          contactTitle: "Contact",
+          contactP: "Feel free to reach out!",
+        },
       },
-    resources : {
-        en : {
-            translation : {
-                navOption1 : "About",
-                navOption2 : "Experience",
-                navOption3 : "Projects",
-                navOption4 : "Contact",
-                navTitulo : "Portfolio",
-                navToggle : 'Dark Mode',
-                heroGreeting : "Hi, I'm Santiago!",
-                heroParagraph: "Web developer fluent in English, specializing in user-centered web design for e-commerce and digital services. Proficient in HTML, CSS, JavaScript, PHP, WooCommerce, and Vtex. Skilled troubleshooter with 4 years of experience in cross-functional project development and strong customer service skills.",
-                heroContact : "Contact Me",
-                aboutTitle : "About",
-                aboutSubTitle1 : "Frontend Developer",
-                aboutSubTitle2 : "Backend Developer",
-                aboutSubTitle3 : "UI Designer",
-                aboutSubContent1: "I'm a frontend developer with experience in building responsive and optimized sites",
-                aboutSubContent2: "I have experience developing fast and optimised back-end systems and APIs",
-                aboutSubContent3: "I have designed multiple landing pages and have created design systems as well",
-                experienceTitle: "Experience",
-                experienceSubTitleTP: "IT Request Management Analyst, Teleperformance",
-                experienceDateTP: "Apr, 2021 - Jan, 2023",
-                experienceSubContent1TP: "Delivered 1 level service in 5 LatAm countries, while handling 9 users per day",
-                experienceSubContent2TP: "Analyze user requirements, and supported agile development",
-                experienceSubTitleAero : "Technical Support Agent, Aeronautica Civil - Comware",
-                experienceDateAero : "Aug, 2018 - Apr, 2021",
-                experienceSubContent1Aero : "Managed IT infrastructure at the Aeronautica Civil, including hardware and software",
-                experienceSubContent2Aero : "Provided comprehensive support for apps like Aranda, SIIF, JDE Oracle, Kactus, active directory, remote worker support.",
-                projectsTitle : "Projects",
-                projectsImage1: "Imagen ",
-                projectsImage1Alt: "Image with Rick And Morty page",
-                projectsTitle1: "Rick and Morty Wiki",
-                projectsTitle2: "Netflix Clone",
-                projectsTitle3: "Twitter Clone",
-                projectsTitle4: "Pets Grooming Page",
-                projectsTitle5: "Decryptor",
-                projectsTitle6: "Shopping Cart",
-                projectDescriptionA: "Here in the Rick & Morty Character Wiki, you can navigate to explore...",
-                projectDescriptionB: "In this Netflix clone, you can seamlessly sign up and log in. Once..",
-                projectDescriptionC : "Here in the Twitter clone application,  you can freely...",
-                projectDescriptionD : "A grooming website where you can make appointments check for ...",
-                projectDescriptionE : "A web-based mini-game designed to engage users in a challenging ...",
-                projectDescriptionF : "An intuitive platform that seamlessly integrates a robust...",
-                projectTotalDescA: "This is Rick & Morty Character Wiki where users can navigate to investigate different characters, locations and episodes, also check if a character is alive or dead.  It was done with Reactjs 18, retrieving data from a Rick and Morty API. Styled with bootstrap 5",
-                projectTotalDescB: "Netflix clone where users can sign in up and log in, they can add favorite movies or delete them. Also, they can see the latest movie organized. This app was made using ReactJS 18 version, and Tailwind CSS 8, the data is stored in Firebase 10.4.0 version using NoSQL cloud database Firestore for backend, also was applied Authentication package service.",
-                projectTotalDescC: "Twitter clone where users can share ideas, and comment ideas, if users want to share an idea they have to be registered and further to log in, they can post own ideas, comment ideas or just give a liked.  To build this web application was implemented, Laravel Framework 10. This application store data in a web SQL server. The application was deployed at Vercel CLI.",
-                projectTotalDescD: "A grooming website where you can make appointments check for information, or just make contact. It was made by using WordPress CMS, it was implemented Elementor plugin, Astra theme, and Salon plugin for booking. It showcases my WordPress development skills, Elementor customization, and integration of essential plugins.",
-                projectTotalDescE: "A web-based mini-game designed to engage users in a challenging yet rewarding decryption experience. Crafted with a blend of JavaScript, CSS, and HTML technologies, this interactive game prompts players to decrypt three strategically chosen words to unveil a crucial clue.",
-                projectTotalDescF: "An intuitive platform that seamlessly integrates a robust shopping cart functionality. Developed using a combination of JavaScript, CSS, and HTML, this feature-rich web page empowers users to effortlessly manage their shopping experiences. With the ability to add, remove, and update products, as well as calculate the total sum of items in the cart, 'ShopCart' offers a streamlined and efficient shopping journey.",
-                more: "more.",
-                demo : "Demo",
-                source : "Source",
-                close : "Close",
-                contactTitle : 'Contact',
-                contactP : 'Feel free to reach out!',                
-            },                    
+      es: {
+        translation: {
+          navOption1: "Sobre Mi",
+          navOption2: "Experiencia",
+          navOption3: "Proyectos",
+          navOption4: "Contacto",
+          navTitulo: "Portafolio",
+          navToggle: "Modo Oscuro",
+          heroGreeting: "Hola, ¡soy Santiago!",
+          heroParagraph:
+            "Ingeniero de Sistemas bilingüe con 2 años de experiencia dedicada a la optimización estratégica de marketing digital y 6 años de trayectoria general en IT, orientado a la optimización estratégica de campañas en Meta Ads, SEO y Google Ads para servicios digitales.",
+          heroContact: "Contáctame",
+          aboutTitle: "Sobre Mí",
+          aboutSubTitle1: "Meta Ads Especialista",
+          aboutSubTitle2: "SEO Especialista",
+          aboutSubTitle3: "Google Search Ads Especialista",
+          aboutSubContent1:
+            "Especialista en Meta Ads con experiencia asesorando campañas mediante la optimización de presupuestos, métricas y estrategias técnicas (API, píxel). Dominio en diseño de creativos, uso de formatos y colorimetrías alineadas a tendencias, así como redacción de copies efectivos y elaboración de informes de rendimiento.",
+          aboutSubContent2:
+            "Especialista en SEO con un enfoque en la optimización estratégica de la visibilidad online. Cuento con un sólido historial en la mejora del posicionamiento de páginas web a través del análisis de palabras clave, la optimización on-page y la creación de contenido de alto impacto para aumentar el tráfico y la presencia digital.",
+          aboutSubContent3:
+            "Especialista en SEM y Google Ads, con un sólido historial en la gestión y optimización de campañas para maximizar el retorno de la inversión. Me especializo en la investigación estratégica de palabras clave, la optimización de pujas y la redacción de anuncios de alto rendimiento, todo con el objetivo de alcanzar metas de negocio específicas.",
+          experienceTitle: "Experiencia",
+          experienceSubTitleTP:
+            "Analista de gestión de requerimintos de TI, Teleperformance",
+          experienceDateTP: "Abr, 2021 - Ene, 2023",
+          experienceSubContent1TP:
+            "Entregué servicio de 1er nivel en 5 países de Latinoamérica, mientras atendía 9 usuarios por día.",
+          experienceSubContent2TP:
+            "Analicé los requisitos de los usuarios y respaldé el desarrollo ágil.",
+          experienceSubContent3TP:
+            "Resolví problemas de software y aplicaciones web mediante asesoramiento técnico.",
+          experienceSubTitleAero:
+            "Especialista en Marketing Digital",
+          experienceDateAero: "Mayo, 2024 - Presente ",
+          experienceSubContent1Aero:
+            "Gestión de campañas: Diseño y ejecucuto campañas PPC y CPM para más de 20 anunciantes por trimestre, incluyendo planificación estratégica, definición de buyer personas, establecimiento de KPIs, optimización en buscadores y segmentación por etapas del embudo.",
+          experienceSubContent2Aero:
+            "Implementación técnica y automatización: Experiencia en la configuración de píxeles, API de conversiones, schema markup, sitemaps y automatizaciones CRM con herramientas como Zapier, Make y HubSpot.",
+          experienceSubContent3Aero:
+          "Análisis de datos y optimización continua: Capacidad para analizar la visibilidad online y optimizar el rendimiento mediante informes detallados, dashboards personalizados y pruebas A/B.",
+            projectsTitle: "Proyectos",
+          projectsImage1: "Imagen ",
+          projectsImage1Alt: "Imagen con pagina de Rick and Morty ",
+          projectsTitle1: "De cero a 4.2x ROAS",
+          projectsTitle2: "Gestión de marketing en motores de búsqueda (SEM) y PPC",
+          projectsTitle3: "Crecimiento orgánico y estrategia de contenido",
+          projectDescriptionA:
+          "El proyecto generó un crecimiento del 45% en las conversiones con una inversión de $10,000 en publicidad de Meta. Este resultado fue posible gracias a una estrategia integral que combinó planeación inteligente con implementación técnica y creatividad.",
+          projectDescriptionB:
+          "El proyecto generó un aumento del 30% en la tasa de clics (CTR) y una reducción del 20% en el costo por adquisición (CPA), con un presupuesto de $8,000. Estos resultados demuestran un enfoque estratégico en la gestión de campañas de Google Ads para maximizar el retorno de inversión.",
+          projectDescriptionC:
+          "Este proyecto se centró en sentar una base sólida para el crecimiento orgánico, lo que resultó en un aumento del 50% en el tráfico web orgánico en seis meses y un incremento del 25% en la visibilidad de la marca. Esto demuestra un enfoque estratégico para mejorar la presencia en línea sin depender de la publicidad pagada.",
+          projectDescriptionAul:
+          "Planificación Estratégica: Desarrollé una estrategia de publicidad full-funnel desde cero, definiendo los KPIs clave y los eventos de conversión para optimizar el recorrido del cliente.",
+          projectDescriptionAul2:
+          "Estructura de la Campaña de Anuncios: Creé y gestioné campañas segmentadas en Google Ads, incluyendo las redes de búsqueda y de display, con un enfoque en la optimización de los textos de los anuncios y las estrategias de puja.",
+          projectDescriptionAul3:
+          "Análisis de Rendimiento: Monitoreé y analicé el rendimiento de las campañas, realizando ajustes basados en datos para mejorar las tasas de clics (CTR) y reducir el costo por adquisición (CPA).",
+          projectDescriptionBul:
+          "Estrategia de Palabras Clave: Realicé una investigación exhaustiva de palabras clave para identificar consultas de búsqueda de alta intención y alinearlas con los objetivos de la campaña.",
+          projectDescriptionBul2:
+          "Estructura de Campañas de Anuncios: Creé y gestioné campañas segmentadas en Google Ads, incluyendo las redes de búsqueda y de display, enfocándome en la optimización del texto de los anuncios y las estrategias de puja.",
+          projectDescriptionBul3:
+          "Análisis de Rendimiento: Monitoreé y analicé el rendimiento de las campañas, realizando ajustes basados en datos para mejorar las tasas de clics (CTR) y reducir el costo por adquisición (CPA).",
+         projectDescriptionSEO1:
+         "Investigación de Palabras Clave: Realicé un análisis exhaustivo para identificar palabras clave relevantes y de alta intención, las cuales se alinearon con los objetivos de negocio y la estrategia de contenido.",
+         projectDescriptionSEO2:
+         "Estrategia de Contenido y SEO On-Page: Desarrollé un calendario de contenido y optimicé tanto el contenido nuevo como el existente para SEO, mejorando la arquitectura del sitio web y la experiencia del usuario.",
+         projectDescriptionSEO3:
+         "Análisis y Optimización: Monitoreé el rendimiento orgánico utilizando herramientas de análisis para identificar oportunidades de crecimiento, mejorar el posicionamiento en los resultados de búsqueda (SERP) y perfeccionar continuamente la estrategia de contenido.",
+          more: "más.",
+          demo: "Demo",
+          source: "Fuente",
+          close: "Cerrar",
+          contactTitle: "Contacto",
+          contactP: "¡No dudes en comunicarte!",
         },
-        es : {
-            translation : {
-                navOption1 : "Sobre Mi",
-                navOption2 : "Experiencia",
-                navOption3 : "Proyectos",
-                navOption4 : "Contacto",
-                navTitulo : "Portafolio",
-                navToggle : 'Modo Oscuro',
-                heroGreeting : "Hola, ¡soy Santiago!",
-                heroParagraph: "Desarrollador web con fluidez en inglés, especializado en diseño web centrado en el usuario para comercio electrónico y servicios digitales. Conocimiento en HTML, CSS, JavaScript, PHP, WooCommerce y Vtex. Habilidades en resolución de problemas con 4 años de experiencia en proyectos interfuncionales y sólidas habilidades de servicio al cliente.",
-                heroContact : "Contáctame",
-                aboutTitle : "Sobre Mí",
-                aboutSubTitle1 : "Desarrolador Frontend",
-                aboutSubTitle2 : "Desarrolador Backend",
-                aboutSubTitle3 : "Diseñador UI",
-                aboutSubContent1: "Soy un desarrollador frontend con experiencia en la creación de sitios responsivos y optimizados.",
-                aboutSubContent2: "Tengo experiencia desarrollando APIs y sistemas back-end rápidos y optimizados.",
-                aboutSubContent3: "He diseñado múltiples landing pages y también he creado sistemas de diseño.",
-                experienceTitle: "Experiencia",
-                experienceSubTitleTP: "Analista de gestión de requerimintos de TI, Teleperformance",
-                experienceDateTP: "Abr, 2021 - Ene, 2023",
-                experienceSubContent1TP: "Entregué servicio de 1er nivel en 5 países de Latinoamérica, mientras atendía 9 usuarios por día.",
-                experienceSubContent2TP: "Analicé los requisitos de los usuarios y respaldé el desarrollo ágil.",
-                experienceSubTitleAero : "Agente de soporte técnico, Aeronautica Civil - Comware",
-                experienceDateAero : "Ago, 2018 - Abr, 2021",
-                experienceSubContent1Aero : "Administré la infraestructura de TI en la Aeronáutica Civil, incluyendo hardware y software",
-                experienceSubContent2Aero : "Brindé soporte integral para aplicaciones como Aranda, SIIF, JDE Oracle, Kactus, directorio activo, soporte a trabajadores remotos.",
-                projectsTitle : "Proyectos",
-                projectsImage1: "Imagen ",
-                projectsImage1Alt: "Imagen con pagina de Rick and Morty ",
-                projectsTitle1: "Wiki de Rick and Morty",
-                projectsTitle2: "Clone de Netflix",
-                projectsTitle3: "Clone de Twitter",
-                projectsTitle4: "Cuidado de Mascotas",
-                projectsTitle5: "Juego de cifrado",
-                projectsTitle6: "Carro de la compras",
-                projectDescriptionA: "Rick & Morty Wiki de personajes, puedes navegar para...",             
-                projectDescriptionB: "En este clon de Netflix, puedes registrarte e iniciar ...",
-                projectDescriptionC : "Aquí, en la aplicación clone de Twitter, puedes...",
-                projectDescriptionD : "Un sitio web de peluquería donde puedes concertar citas ...",
-                projectDescriptionE : "Un minijuego basado en web diseñado para involucrar a los...",
-                projectDescriptionF : "Una plataforma intuitiva que integra a la perfección una...",
-                projectTotalDescA: "Este es Rick & Morty Character Wiki donde los usuarios pueden navegar para investigar diferentes personajes, ubicaciones y episodios, y también verificar si un personaje aun vive. Se hizo con Reactjs 18, recuperando datos de una API de Rick and Morty. Diseñado con bootstrap 5",
-                projectTotalDescB: "Clon de Netflix donde los usuarios pueden registrarse e iniciar sesión, pueden agregar películas favoritas o eliminarlas. Además, podrán ver la última película en tendencia organizada. Esta aplicación se creó usando la versión ReactJS 18 y Tailwind CSS 8, los datos se almacenan en la versión Firebase 10 usando la base de datos en la nube NoSQL Firestore para el backend, también se aplicó el servicio de paquete de autenticación.",
-                projectTotalDescC: "Clon de Twitter donde los usuarios pueden compartir ideas y comentar; si los usuarios quieren compartir una idea, deben estar registrados y luego iniciar sesión, pueden publicar sus propias ideas, comentar o simplemente dar un me gusta. Para construir esta aplicación web se implementó Laravel Framework 10. Esta aplicación almacena datos en un servidor web SQL. La aplicación se implementó en Vercel CLI.",
-                projectTotalDescD: "Un sitio web de peluquería donde puedes concertar citas, consultar información o simplemente establecer contacto. Se realizó utilizando WordPress CMS, se implementó el complemento Elementor, el tema Astra y el complemento Salon para reservas. Muestra mis habilidades de desarrollo de WordPress, personalización de Elementor e integración de complementos esenciales.",
-                projectTotalDescE: "Un minijuego basado en web diseñado para involucrar a los usuarios en una experiencia de descifrado desafiante pero gratificante. Elaborado con una combinación de tecnologías JavaScript, CSS y HTML, este juego interactivo pide a los jugadores descifrar tres palabras elegidas estratégicamente para revelar una pista crucial.",
-                projectTotalDescF: "Una plataforma intuitiva que integra a la perfección una sólida funcionalidad de carrito de compras. Desarrollada utilizando una combinación de JavaScript, CSS y HTML, esta página web rica en funciones permite a los usuarios gestionar sin esfuerzo sus experiencias de compra. Con la capacidad de agregar, eliminar y actualizar productos, así como calcular la suma total de artículos en el carrito, 'ShopCart' ofrece un proceso de compra ágil y eficiente.",
-                more: "más.",
-                demo : "Demo",
-                source : "Fuente",
-                close : "Cerrar",
-                contactTitle : 'Contacto',
-                contactP : '¡No dudes en comunicarte!',
-            },
-        },
-    }
-})
+      },
+    },
+  });

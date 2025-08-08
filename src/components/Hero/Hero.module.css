@@ -5,11 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 49px;
+  margin: 49px 10% 0; /* Shorthand for top, right, bottom, left */
+  padding: 180px 0 140px 0; /* Shorthand for padding */
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 180px 0px 140px 0px;
 }
 
 .content {
@@ -25,12 +23,9 @@
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
-  /* background: linear-gradient(
-    25deg,
-    rgba(19, 10, 12, 1) 70%,
-    rgba(19, 10, 12, 0) 120%
-  ); */
-  color: var(--color-text)!important;
+  color: var(
+    --color-text
+  ); /* The !important rule is often a sign of a specificity issue; it's better to avoid it */
 }
 
 .description {
@@ -55,28 +50,23 @@
 .contactBtn:hover {
   background-color: var(--hover-btn);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
 }
-
 
 .heroImg {
   max-width: 20%;
   z-index: 1;
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: floating 3s infinite ease-in-out; /* Consolidated animation properties */
 }
 
 @keyframes floating {
   0% {
-    transform: translate(0, 0px);
+    transform: translate(0, 0);
   }
   50% {
     transform: translate(0, 10px);
   }
   100% {
-    transform: translate(0, -0px);
+    transform: translate(0, 0); /* Changed to 0px for consistency */
   }
 }
 
@@ -84,23 +74,20 @@
   position: absolute;
   width: 50vw;
   height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
+  min-width: 350px; /* `min-width: 350px` was repeated */
   top: -128px;
   left: -10vw;
   border-radius: 764px;
   background: rgba(145, 141, 97, 0);
   filter: blur(209px);
   z-index: 0;
-  -webkit-filter: blur(209px);
 }
 
 .bottomBlur {
   position: absolute;
   width: 70vw;
   height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
+  min-width: 350px; /* `min-width: 350px` was correct here, and `min-width: 250px` was repeated */
   top: 246px;
   right: -25vw;
   border-radius: 764px;
@@ -109,12 +96,11 @@
   z-index: 0;
 }
 
-
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
     margin-top: 102px;
-    padding: 0px 0px 0px 0px;
+    padding: 0; /* Shorthand for all padding */
   }
 
   .content {
@@ -123,7 +109,7 @@
 
   .title {
     font-size: 53px;
-    font-weight: 900;    
+    font-weight: 900;
   }
 
   .description {
@@ -145,13 +131,10 @@
 
   .description {
     font-size: 25px;
+    max-width: 100%; /* The `max-width: 100%` rule was repeated from the other media query, making it redundant */
   }
 
   .contactBtn {
     font-size: 27px;
-  }
-
-  .description {
-    max-width: 100%;
   }
 }

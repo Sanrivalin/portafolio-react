@@ -1,46 +1,42 @@
 @import "../../../vars.css";
 
-
 .btnContainer {
-    display: flex;
-    gap: 16px;
-    justify-content: space-between;
-    padding: 0px 5px 0px 29px;;
-    margin: 0;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 0 5px 0 29px; /* Shorthand for padding */
+  margin: 0;
 }
 
 button {
-    border-radius: 8px;
-    color: var(--color-text);
-    border: 3px solid var(--color-text);
-    padding:11px 8px 11px 8px;
-    font-size:0.8em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color:transparent;
-    cursor: pointer;
-    transition:border-color 0.25;
-    
+  border-radius: 8px;
+  color: var(--color-text);
+  border: 3px solid var(--color-text);
+  padding: 11px 8px; /* Shorthand for padding top/bottom and left/right */
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s ease-in-out; /* Add 's' for seconds and ease-in-out */
 }
 
 button:hover {
-    border-color:var(--hover-btn);
+  border-color: var(--hover-btn);
 }
 
 button.selected {
-    background-color: var(--color-primary);
-    color: var(--color-tertiary)
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
 }
 
 @media screen and (max-width: 1200px) {
-    button {
-        padding:9px 6px 9px 6px;
-        font-size:0.6em;
-    }
-}
+  .btnContainer {
+    padding: 0 6px 9px 0; /* Consolidated from the second media query */
+  }
 
-@media screen and (max-width: 1200px) {
-    .btnContainer {
-        padding:0px 6px 9px 0px;
-    }
+  button {
+    padding: 9px 6px; /* Shorthand for padding */
+    font-size: 0.6em;
+  }
 }

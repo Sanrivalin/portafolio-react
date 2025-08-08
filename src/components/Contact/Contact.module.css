@@ -52,26 +52,24 @@
 }
 
 .link img {
-  max-width: 50px; /* Adjust the size of your icons */
+  max-width: 50px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.link:hover{
-  transform: scale(1.0);
-  -webkit-transform: scale(1.0);
-  -moz-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  -o-transform: scale(1.0);
+.link:hover {
+  /* No es necesario transformar a `scale(1.0)` ya que es el estado por defecto.
+     Esto se puede eliminar para un código más limpio. */
+  transform: scale(1);
 }
 
 .link:hover img {
-  filter: grayscale(0%) blur(0.5px); /* Add grayscale and blur on hover */
+  filter: grayscale(0%) blur(0.5px);
 }
 
 .link:hover a {
-  color: var(--color-tertiary); /* Change the color to your preferred hover color */
+  color: var(--color-tertiary);
 }
 
 @media screen and (max-width: 830px) {
@@ -87,7 +85,7 @@
   }
 
   .links {
-    align-items: none;
+    align-items: center; /* Cambiado a `center` para que se alinee mejor con el texto */
   }
 
   .link a {
